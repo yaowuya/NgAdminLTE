@@ -1,0 +1,30 @@
+<div>
+  demo list works!
+</div>
+
+<div class="box">
+  <div class="box-header with-border">
+    <h3 class="box-title">演示列表</h3>
+  </div>
+  <!-- /.box-header -->
+  <div class="box-body">
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th style="width: 10px">#</th>
+          <th>姓名</th>
+          <th>年龄</th>
+          <th>性别</th>
+        </tr>
+        <tr *ngFor="let item of list;let i= index;">
+          <td>{{i+1}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.age}}</td>
+          <td>{{item.gender}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- /.box-body -->
+
+</div>

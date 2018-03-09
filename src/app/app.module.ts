@@ -11,6 +11,8 @@ import {AuthHttp, AuthConfig} from 'angular2-jwt';
 //common services
 import {AuthGuardService} from '../app/common/services/auth-guard.service';
 import {HttpClientService} from '../app/common/services/http-client.service';
+import {MissionService} from '../app/common/services/mission.service';
+import {Util} from '../app/common/utils/util';
 
 /**
  * [authHttpServiceFactory 定义存储token的位置和名称]
@@ -42,7 +44,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
       deps: [Http, RequestOptions]
     },
     AuthGuardService,
-    HttpClientService
+    HttpClientService,
+    MissionService,
+    Util
   ],
   bootstrap: [AppComponent]
 })

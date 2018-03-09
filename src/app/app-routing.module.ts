@@ -5,6 +5,9 @@ const routes:Routes=[
   {
     path:'',
     loadChildren:'./auth/auth.module#AuthModule' //懒加载
+  },{
+    path:'',
+    loadChildren:'./layout/layout.module#LayoutModule'
   }
 ];
 
