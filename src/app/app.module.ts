@@ -8,6 +8,13 @@ import {AppComponent} from './app.component';
 import {HttpModule, Http, RequestOptions} from '@angular/http';
 import {AuthHttp, AuthConfig} from 'angular2-jwt';
 
+//layout
+import {LayoutComponent} from './layout/bodylayout/layout.component';
+import {AppBreadcrumbComponent} from './layout/breadcrumb/breadcrumb.component';
+import {AppHeaderComponent} from './layout/header/header.component';
+import {AppSidebarComponent} from './layout/sidebar/sidebar.component';
+import {AppFooterComponent} from './layout/footer/footer.component';
+
 //common services
 import {AuthGuardService} from '../app/common/services/auth-guard.service';
 import {HttpClientService} from '../app/common/services/http-client.service';
@@ -29,7 +36,12 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LayoutComponent,
+    AppBreadcrumbComponent,
+    AppHeaderComponent,
+    AppSidebarComponent,
+    AppFooterComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +60,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     MissionService,
     Util
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule {
 }

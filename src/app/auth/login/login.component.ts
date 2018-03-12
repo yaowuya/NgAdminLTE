@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     // 		sessionStorage.setItem('token', data.token);
     // 		sessionStorage.setItem('user', JSON.stringify(data.user));
     window['swal']('提示', '登录成功', 'success');
-    // this.router.navigateByUrl("pages/main/index");
+    this.router.navigateByUrl("pages/main/index");
     // 	}
     // });
   }

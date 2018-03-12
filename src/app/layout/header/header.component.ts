@@ -3,7 +3,7 @@ import { Router, NavigationEnd } from '@angular/router';
 import { environment } from '../../../environments/environment';
 import { HeaderService } from './header.service';
 import io from 'socket.io-client/dist/socket.io.js';
-import { MissionService } from '../../services/mission.service';
+import { MissionService } from '../../common/services/mission.service';
 
 
 @Component({
@@ -35,7 +35,7 @@ export class AppHeaderComponent implements OnInit {
 	}
 
 	removeSession(){
-		
+
 	}
 
 	ngOnInit() {

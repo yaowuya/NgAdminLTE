@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClientService } from '../../../services/http-client.service';
+import { HttpClientService } from '../../../common/services/http-client.service';
 
 @Injectable()
 export class DemoListService {
